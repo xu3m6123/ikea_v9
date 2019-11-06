@@ -1,0 +1,495 @@
+body{
+    width: 1519px;
+    margin: 0 auto;
+}
+/*Tooltip*/
+.tooltip {
+    position: relative;
+    display: block;
+  }
+  .tooltip .tooltiptext {  /* Tooltip text */
+    visibility: hidden;
+    width: 100px;
+    background-color: #9E9E9F;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 3px;
+    top: 110%;
+    left: 50%;
+    margin-left: -50px; /* Use half of the width (120/2 = 60), to center the tooltip */
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  .tooltip:hover .tooltiptext {/* Show the tooltip text when you mouse over the tooltip container */
+    visibility: visible;
+  }
+/*header*/
+header{
+    display: flex;
+    flex-direction: column;
+    width: 1500px;
+    height: 144px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+.header_nav_first{
+    display: flex;
+    flex-direction: row;
+    width: 1370px;
+    height: 52px;
+    margin: 0px auto;
+    padding: 24px 15px 7px 15px;
+    background-color: white;
+    border-bottom: 1px solid #9E9E9F;
+}
+.header_nav_first_logopos{
+    display: block;
+    width: 130px;
+    height: 52px;
+    margin: 0px 40px 0px 28px;
+    padding: 0px;
+}
+.header_nav_first_logo{
+    display: block;
+    width: 130px;
+    height: 52px;
+    margin: 0px;
+    padding: 0px;
+}
+.header_nav_first_inlistbuttons{
+    display: flex;
+    flex-direction: row;
+    width: 380px;
+    height: 40px;
+    margin: 6px 0px 6px 0px;
+    padding: 0px;
+}
+li{
+    display:block;
+}
+.header_nav_listbutton{
+    margin: 0px 5px 0px 0px;
+    padding: 11px 15px 10.6px 15px;
+    background-color: rgb(255, 255, 255);
+}
+.header_nav_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Microsoft JhengHei", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-decoration: none;
+    text-align: center;
+    font-weight: normal;
+    color: #125091;
+    content: attr(balloon-data);
+}
+.header_nav_inlistbutton{
+    margin: 0px 5px 0px 0px;
+    padding: 11px 15px 10.6px 15px;
+    background-color: #125091;
+    border-radius: 3px;
+}
+.header_nav_intext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Microsoft JhengHei", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-decoration: none;
+    text-align: center;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+}
+.header_nav_listbutton:hover{
+    background-color: #125091;
+}
+.header_nav_text:hover{
+    color: rgb(255, 255, 255);
+}
+.header_nav_first_alignright{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 830px;
+    height: 40px;
+    margin: 6px 0px;
+    padding: 0px;
+}
+.search{
+    width: 191px;
+    height: 36px;
+    margin: 2px 33px 2px 0px;
+    padding: 0px;
+
+    border: 1.5px solid #125091;
+}   
+.search_text{
+    width: 150px;
+    height: 35px;
+    margin: 0px;
+    padding: 0px 0px 0px 7px;
+
+    border-style: none;
+    font-family: "Microsoft JhengHei", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-decoration: none;
+    text-align: left;
+    font-weight: normal;
+    color: #3F3B3A;
+}
+.search_text:focus{
+outline: none;
+}
+.search_imgicon{
+    cursor: pointer;/*改變鼠標的形狀*/
+    float: right;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 3px 0px;
+    padding: 5px;
+}
+
+.header_nav_first_alignright_imgicon{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0px 0px 0px 5px;
+    padding: 0px;
+}
+.inicon_img{
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0px 0px 0px 5px;
+    padding: 0px;
+    opacity: 0;
+}
+.icon_switch {
+    position: relative;
+}
+.icon_switch img:first-child:hover{
+    opacity: 1;
+}
+.icon_switch img:last-child:hover{
+    opacity: 0;
+}
+.tooltip .goods_amount{
+    position: absolute;
+    float: right;
+    display: block;
+    width: 12px;
+    top: 38%;
+    left: 56%;
+    margin-left:-6px;
+    z-index: 1;
+    pointer-events: none;/*穿透點擊，預設auto為可選，none為穿透*/
+
+    font-family: "Microsoft JhengHei", Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-decoration: none;
+    text-align: center;
+    font-weight: normal;
+    color: #125091;
+}
+.tooltip:hover .goods_amount{
+    color: #ffffff;
+}
+
+.content {
+    width: 1400px;
+    margin: 0px auto;   
+}
+
+.area_1_pic {
+    margin: 0px 37px;
+}
+
+.area_2 {
+    margin: 80px 37px;
+    padding-top: 5px;
+    padding-bottom: 40px;
+    background-color: #EFEFEF;
+    border-radius: 3px;
+}
+
+.精選推薦_title {
+    border-style: none;
+    font-family: "Microsoft JhengHei", Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-decoration: none;
+    text-align: left;
+    font-weight: bold;
+    color: #3F3B3A;
+    margin: 20px 0px;
+}
+
+.精選推薦_hover {width:1326px; height:436px;overflow:hidden;}
+.精選推薦_hover img{transform:scale(1,1);transition: all 0.5s ease-out;}
+.精選推薦_hover img:hover{transform:scale(1.05,1.05);}
+
+.commodity_pic {
+    height: 185px;
+    margin-top: 10px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.commodity_text {
+    display:flex;
+}
+
+.text_1 { margin-right: 45px; }
+.text_2 { margin-right: 45px; }
+.text_3 { margin-right: 45px; }
+.text_4 { margin-right: 45px; }
+.text_5 { margin-right: 45px; }
+
+.commodity_text_1 {
+    width: 185px;
+    border-style: none;
+    font-family: "Microsoft JhengHei", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-decoration: none;
+    text-align: left;
+    font-weight: bold;
+    line-height: 5px;
+    color: #000000;
+}
+
+.commodity_text_2 {
+    width: 185px;
+    border-style: none;
+    font-family: "Microsoft JhengHei", Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-decoration: none;
+    text-align: left;
+    font-weight: bold;
+    line-height: 20px;
+    color: #df7b2f;
+}
+
+.area_3 {
+    margin: 80px 37px;
+}
+
+.新品上市_title {
+    border-style: none;
+    font-family: "Microsoft JhengHei", Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-decoration: none;
+    text-align: left;
+    font-weight: bold;
+    color: #3F3B3A;
+    margin: 20px 0px;
+}
+
+.新品上市_pic {
+    display:flex;
+    justify-content: space-between;
+}
+
+.新品上市_hover {width:650px; height:368px;overflow:hidden;}
+.新品上市_hover img{transform:scale(1,1);transition: all 0.5s ease-out;}
+.新品上市_hover img:hover{transform:scale(1.05,1.05);}
+
+.area_4 {
+    background-color: #ffdb00;
+    margin: 80px 37px;
+    padding-top: 5px;
+    padding-bottom: 40px;
+    border-radius: 3px;
+}
+
+.最新活動_title {
+    border-style: none;
+    font-family: "Microsoft JhengHei", Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-decoration: none;
+    text-align: left;
+    font-weight: bold;
+    color: #3F3B3A;
+    margin: 20px 0px;
+}
+
+.最新活動_pic {
+    display:flex;
+    justify-content: space-around;
+}
+
+.最新活動_hover {width:430px; height:243px;overflow:hidden;}
+.最新活動_hover img{transform:scale(1,1);transition: all 0.5s ease-out;}
+.最新活動_hover img:hover{transform:scale(1.05,1.05);}
+
+.area_5 {
+    margin: 80px 37px 150px 37px;
+}
+
+.IKEA服務_title {
+    border-style: none;
+    font-family: "Microsoft JhengHei", Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-decoration: none;
+    text-align: left;
+    font-weight: bold;
+    color: #3F3B3A;
+    margin: 20px 0px;
+}
+
+.IKEA服務_hover {width:310px; height:369px;overflow:hidden;}
+.IKEA服務_hover img{transform:scale(1,1);transition: all 0.5s ease-out;}
+.IKEA服務_hover img:hover{transform:scale(1.05,1.05);}
+
+.IKEA服務_pic {
+    height: 417 px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.copyright {
+    font-family: "Microsoft JhengHei", Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-decoration: none;
+    text-align: center;
+    font-weight: normal;
+    color: #949494;
+}
+
+.footer {
+    padding: 30px 90px;
+    background-color: #155091;
+    display:flex;
+    
+}
+
+.各店資訊_title {
+    border-style: none;
+    font-family: "Microsoft JhengHei", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-decoration: none;
+    text-align: left;
+    font-weight: normal;
+    color: #9FA0A0;
+    margin: 15px 0px;
+}
+
+.各店資訊_ul_1 {
+    width: 92px;
+    padding-left: 0px;
+}
+
+.footer_list {
+    border-style: none;
+    font-family: "Microsoft JhengHei", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-decoration: none;
+    text-align: left;
+    font-weight: normal;
+    line-height: 25px;
+    color: #ffffff;
+    padding-right: 50px;
+}
+
+.footer_list {text-decoration:none;}
+.footer_list:hover {text-decoration:underline;}
+
+.各店資訊_ul_2 {
+    width: 200px;
+    padding: 0px;
+    padding-top: 37px;
+    padding-right: 110px;
+}
+
+.關於IKEA_title {
+    border-style: none;
+    font-family: "Microsoft JhengHei", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-decoration: none;
+    text-align: left;
+    font-weight: normal;
+    color: #9FA0A0;
+    margin: 15px 0px;
+}
+
+.關於IKEA_list {
+    width: 200px;
+    padding-left: 0px;
+    padding-right: 100px;
+}
+
+.各項服務_title {
+    border-style: none;
+    font-family: "Microsoft JhengHei", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    text-decoration: none;
+    text-align: left;
+    font-weight: normal;
+    color: #9FA0A0;
+    margin: 15px 0px;
+}
+
+.各項服務_list {
+    padding: 0px;
+    padding-right: 120px;
+}
+
+.加入IKEA_top_list {
+    padding: 0px;
+    padding-top: 37px;
+}
+
+.加入IKEA_bottom {
+    padding-top: 40px;
+    display:flex;
+}
+
