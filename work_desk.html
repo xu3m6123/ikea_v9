@@ -1,0 +1,512 @@
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+    <title>各式桌椅/書房辦公家具 ｜ IKEA</title>
+
+    <link href="./css/work_desk_style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+
+
+    <link href="./images/IKEA_logo.ico" type="image/x-ico" rel="icon">
+    <!--加入title的icon-->
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
+        integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./slick/slick.min.js"></script>
+    <script type="text/javascript" src="./js/work_dexk.js"></script>
+    <script src ="./js/script.js"></script>
+    <script src ="./css/bootstrap-grid.min.css"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header_nav_first">
+            <a href="./index.html" class="header_nav_first_logopos"><img class="header_nav_first_logo"
+                    src="./images/IKEA_logo.png"></a>
+            <ul class="header_nav_first_inlistbuttons">
+                <li><a href="#" class="header_nav_inlistbutton header_nav_intext">線上購物</a></li>
+                <li><a href="#" class="header_nav_listbutton header_nav_text">各項服務</a></li>
+                <li><a href="#" class="header_nav_listbutton header_nav_text">IKEA分店</a></li>
+                <li><a href="#" class="header_nav_listbutton header_nav_text">品質保證</a></li>
+            </ul>
+            <div class="header_nav_first_alignright">
+                <div class="search">
+                    <input type="text" class="search_text" placeholder="搜尋..." required>
+                    <a href="#"><img class="search_imgicon" src="./images/sreach_icon.png"></a>
+                </div>
+                <a href="./shoppingbag_page.html" class="icon_switch tooltip"><img class="inicon_img"
+                        src="./images/shoppingbag_inicon.png"><img class="header_nav_first_alignright_imgicon"
+                        src="./images/shoppingbag_icon.png"><span class="tooltiptext">購物袋</span>
+                    <div class="goods_amount">3</div>
+                </a>
+                <a href="#" class="icon_switch tooltip"><img class="inicon_img" src="./images/list_inicon.png"><img
+                        class="header_nav_first_alignright_imgicon" src="./images/list_icon.png"><span
+                        class="tooltiptext">紀錄清單</span></a>
+                <a href="#" class="icon_switch tooltip"><img class="inicon_img" src="./images/member_inicon.png"><img
+                        class="header_nav_first_alignright_imgicon" src="./images/member_icon.png"><span
+                        class="tooltiptext">會員專區</span></a>
+            </div>
+        </div>
+        <div class="header_nav_second">
+            <ul class="header_nav_second_inlistbuttons">
+                <li class="trianglepos"><a href="#" class="header_nav_listbutton header_nav_text" id="big_menu1">找產品</a>
+                    <div class="triangle"></div>
+                    <div class="header_nav_menu" id="big_menu">
+                        <div class="header_nav_menu_line"></div>
+                        <div class="header_nav_menu_main">
+                            <ul class="header_nav_menu_main_row">
+                                <li class="header_nav_menu_main_col meun_iconpos">沙發手扶椅<i
+                                        class="fas fa-angle-down header_nav_menu_icon"></i></li>
+                                <li class="header_nav_menu_main_col meun_iconpos">兒童用具<i
+                                        class="fas fa-angle-down header_nav_menu_icon"></i></li>
+                                <li class="header_nav_menu_main_col meun_iconpos">照明燈具/充電設備<i
+                                        class="fas fa-angle-down header_nav_menu_icon"></i></li>
+                                <li class="header_nav_menu_main_col meun_iconpos">寵物用品<i
+                                        class="fas fa-angle-down header_nav_menu_icon"></i></li>
+                            </ul>
+                            <ul class="header_nav_menu_main_row">
+                                <li class="header_nav_menu_main_col meun_iconpos">收納櫃/盒<i
+                                        class="fas fa-angle-down header_nav_menu_icon"></i></li>
+                                <li class="header_nav_menu_main_col meun_iconpos">家飾佈置用品<i
+                                        class="fas fa-angle-down header_nav_menu_icon"></i></li>
+                                <li class="header_nav_menu_main_col meun_iconpos">廚房用五金<i
+                                        class="fas fa-angle-down header_nav_menu_icon"></i></li>
+                                <li class="header_nav_menu_main_col meun_iconpos">園藝與戶外<i
+                                        class="fas fa-angle-down header_nav_menu_icon"></i></li>
+                            </ul>
+                            <ul class="header_nav_menu_main_row">
+                                <li class="header_nav_menu_main_col meun_iconpos" id="main_desk">各式桌椅<i
+                                        class="fas fa-angle-down header_nav_menu_icon"></i>
+                                    <div class="header_nav_menu_main_list list_actionc">
+                                        <ul class="header_nav_menu_main_list_row">
+                                            <li class="header_nav_menu_main_list_col">咖啡桌/茶几</li>
+                                            <li class="header_nav_menu_main_list_col">床邊桌/床頭櫃</li>
+                                            <li class="header_nav_menu_main_list_col">書桌/電腦桌</li>
+                                            <li class="header_nav_menu_main_list_col">桌面/桌腳</li>
+                                            <li class="header_nav_menu_main_list_col">辦公椅</li>
+                                            <li class="header_nav_menu_main_list_col">餐桌/餐椅</li>
+                                            <li class="header_nav_menu_main_list_col">椅凳/長凳</li>
+                                            <li class="header_nav_menu_main_list_col">摺疊椅</li>
+                                            <li class="header_nav_menu_main_list_col">高腳椅/吧檯椅</li>
+                                            <li class="header_nav_menu_main_list_col">椅墊</li>
+                                            <li class="header_nav_menu_main_list_col">兒童餐椅/兒童高腳椅</li>
+                                        </ul>
+                                    </div>
+
+                                </li>
+                                <div class="slide_cla2" id="cooking"></div>
+                                <li class="header_nav_menu_main_col meun_iconpos">烹飪烘焙用具<i
+                                        class="fas fa-angle-down header_nav_menu_icon"></i></li>
+                                <li class="header_nav_menu_main_col meun_iconpos">餐具/餐廳用品<i
+                                        class="fas fa-angle-down header_nav_menu_icon"></i></li>
+                                <li class="header_nav_menu_main_col meun_iconpos">瑞典美食<i
+                                        class="fas fa-angle-down header_nav_menu_icon"></i></li>
+                            </ul>
+                            <ul class="header_nav_menu_main_row">
+                                <li class="header_nav_menu_main_col meun_iconpos">床/床墊/寢具<i
+                                        class="fas fa-angle-down header_nav_menu_icon"></i></li>
+                                <li class="header_nav_menu_main_col meun_iconpos">布織品及地毯<i
+                                        class="fas fa-angle-down header_nav_menu_icon"></i></li>
+                                <li class="header_nav_menu_main_col meun_iconpos">衣櫃及衣物收納<i
+                                        class="fas fa-angle-down header_nav_menu_icon"></i></li>
+                                <li class="header_nav_menu_main_col meun_iconpos">浴室設備/其他五<i
+                                        class="fas fa-angle-down header_nav_menu_icon"></i>金</li>
+                            </ul>
+
+                        </div>
+                        <div class="slide_cla" id="slide_div"></div>
+                    </div>
+                </li>
+                <li class="trianglepos"><a href="#" class="header_nav_listbutton header_nav_text">找空間</a>
+                    <div class="triangle"></div>
+                </li>
+                <li class="trianglepos"><a href="#" class="header_nav_listbutton header_nav_text">找靈感</a>
+                    <div class="triangle"></div>
+                </li>
+                <li class="trianglepos"><a href="#" class="header_nav_listbutton header_nav_text">找新品及優惠</a>
+                    <div class="triangle"></div>
+                </li>
+            </ul>
+    </header>
+    <article>
+        <div class="article_topgradient"></div>
+        <div class="article_listblock">
+            <ul class="article_list">
+                <li class="article_list_title">找產品 - 各式桌椅：</li>
+                <li class="article_list_textlink">咖啡桌/茶几</li>
+                <li class="article_list_textlink">床邊桌/床頭櫃</li>
+                <li class="article_list_textlink intextlink">書桌/電腦桌</li>
+                <li class="article_list_textlink">桌面/桌腳</li>
+                <li class="article_list_textlink">辦公椅</li>
+                <li class="article_list_textlink">餐桌/餐椅</li>
+                <li class="article_list_textlink">椅凳/長凳</li>
+                <li class="article_list_textlink">摺疊椅</li>
+                <li class="article_list_textlink">高腳椅/吧檯椅</li>
+                <li class="article_list_textlink">椅墊</li>
+                <li class="article_list_textlink_noborder">兒童餐椅/兒童高腳椅</li>
+            </ul>
+            <ul class="article_list">
+                <li class="article_list_title">看空間 - 書房/辦公家具：</li>
+                <li class="article_list_textlink intextlink">書桌/電腦桌</li>
+                <li class="article_list_textlink">工作椅</li>
+                <li class="article_list_textlink">桌腳/桌面</li>
+                <li class="article_list_textlink">書櫃/儲物櫃</li>
+                <li class="article_list_textlink">電線收納/配件</li>
+                <li class="article_list_textlink">垃圾桶/袋子</li>
+                <li class="article_list_textlink">文具收納</li>
+                <li class="article_list_textlink">照明</li>
+                <li class="article_list_textlink_noborder">系列</li>
+            </ul>
+        </div>
+        <div class="article_selectblock">
+            <ul class="article_firstselects">
+                <li class="article_infirstselect">所有商品</li>
+                <li class="article_firstselect">遊戲桌</li>
+                <li class="article_firstselect">辦公桌</li>
+                <li class="article_firstselect">家用工具桌</li>
+                <li class="article_firstselect">筆記型電腦桌</li>
+            </ul>
+            <div class="article_secondselects">
+                <ul class="article_secondselects_colorandorder">
+                    <li class="article_secondselect">商品顏色<i class="fas fa-angle-down article_secondselect_icon"></i>
+                    </li>
+                    <li class="article_secondselect">排列順序<i class="fas fa-angle-down article_secondselect_icon"></i>
+                    </li>
+                </ul>
+                <div class="article_secondselects_spread">
+                    <div class="spread_p">價格區間</div><input type="text" class="spread_text" placeholder="最低金額..."
+                        required>
+                    <div class="spread_line"> - </div><input type="text" class="spread_text" placeholder="最高金額..."
+                        required><input class="spread_submit" type="submit" value="確定">
+                </div>
+            </div>
+        </div>
+        <div class="main_img_block">
+            <div class="main_img_introduction">
+                <div class="main_img_title">在對的環境 獲得更好的效率</div>
+                <div class="main_img_content">
+                    依照你的需求，挑選可以調整桌面高度、轉角設計、活動桌板、美背設計等書桌或工作桌，不論是要處理公事、閱讀雜誌、觀賞影片等，IKEA都有符合你需求的桌子，讓你讀書、工作都更有效率。</div>
+            </div>
+            <img class="main_img" src="./images/main_desk.png">
+        </div>
+        <div class="article_sale_block">
+            <ul class="article_sale_ul slick-slider">
+                <button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="prev" role="button"
+                    style="display: block;"></button>
+                <li><a href="#" class="article_sale"><img src="./images/sale_01.png" class="article_sale_img">
+                        <div class="goods_contect">
+                            <div class="upper_half_p">
+                                <div class="p_type1">FJÄLLBO</div>
+                                <div class="p_type2">遊戲桌</div>
+                            </div>
+                            <div class="the_second_half_p">
+                                <div class="p_type3">$4000</div>
+                                <div class="p_type4">$8000</div>
+                            </div><span class="sale_icon">再創新低</span>
+                        </div>
+                    </a></li>
+                <li><a href="#" class="article_sale"><img src="./images/sale_02.png" class="article_sale_img">
+                        <div class="goods_contect">
+                            <div class="upper_half_p">
+                                <div class="p_type1">FJÄLLBO</div>
+                                <div class="p_type2">假的遊戲桌</div>
+                            </div>
+                            <div class="the_second_half_p">
+                                <div class="p_type3">$4000</div>
+                                <div class="p_type4">$8000</div>
+                            </div><span class="sale_icon">再創新低</span>
+                        </div>
+                    </a></li>
+                <li><a href="#" class="article_sale"><img src="./images/sale_03.png" class="article_sale_img">
+                        <div class="goods_contect">
+                            <div class="upper_half_p">
+                                <div class="p_type1">FJÄLLBO</div>
+                                <div class="p_type2">筆記型電腦桌</div>
+                            </div>
+                            <div class="the_second_half_p">
+                                <div class="p_type3">$4000</div>
+                                <div class="p_type4">$8000</div>
+                            </div><span class="sale_icon">再創新低</span>
+                        </div>
+                    </a></li>
+                <li><a href="#" class="article_sale"><img src="./images/sale_04.png" class="article_sale_img">
+                        <div class="goods_contect">
+                            <div class="upper_half_p">
+                                <div class="p_type1">FJÄLLBO</div>
+                                <div class="p_type2">死亡筆記型電腦桌</div>
+                            </div>
+                            <div class="the_second_half_p">
+                                <div class="p_type3">$4000</div>
+                                <div class="p_type4">$8000</div>
+                            </div><span class="sale_icon">再創新低</span>
+                        </div>
+                    </a></li>
+                <li><a href="#" class="article_sale"><img src="./images/sale_05.png" class="article_sale_img">
+                        <div class="goods_contect">
+                            <div class="upper_half_p">
+                                <div class="p_type1">FJÄLLBO</div>
+                                <div class="p_type2">家用工作桌</div>
+                            </div>
+                            <div class="the_second_half_p">
+                                <div class="p_type3">$4000</div>
+                                <div class="p_type4">$8000</div>
+                            </div><span class="sale_icon">再創新低</span>
+                        </div>
+                    </a></li>
+                <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="prev" role="button"
+                    style="display: block;"></button>
+            </ul>
+        </div>
+        <div class="goods_main">
+            <div class="goods_main_a">
+                <div class="goods_main_a_title"><img src="./images/goods_title_01.png" class="goods_main_a_title_img">
+                    <div class="goods_main_a_titletext">
+                        <div>FJÄLLBO</div>
+                        <div>筆記型電腦桌</div>
+                        <div>$4000</div>
+                    </div>
+                </div>
+                <div class="goods_main_a_goods_rel">
+                    <div class="goods_main_a_goods_abs"><a href="#"><img src="./images/good06.png"
+                                class="article_goods_img"></a>
+                        <div class="maingoods_contect">
+                            <div class="upper_half_p">
+                                <div class="p_type1">AAAAA</div>
+                                <div class="p_type2">我很棒筆電桌子</div>
+                            </div>
+                            <div class="the_second_half_p">
+                                <div class="p_type3">$4000</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods_main_a_goods_rel">
+                    <div class="goods_main_a_goods_abs"><a href="#"><img src="./images/good09.png"
+                                class="article_goods_img"></a>
+                        <div class="maingoods_contect">
+                            <div class="upper_half_p">
+                                <div class="p_type1">SAOJOPBO</div>
+                                <div class="p_type2">筆記型電腦桌.真</div>
+                            </div>
+                            <div class="the_second_half_p">
+                                <div class="p_type3">$4000</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods_main_a_goods_rel">
+                    <div class="goods_main_a_goods_abs"><a href="#"><img src="./images/good16.png"
+                                class="article_goods_img"></a>
+                        <div class="maingoods_contect">
+                            <div class="upper_half_p">
+                                <div class="p_type1">FJÄLLBO</div>
+                                <div class="p_type2">死亡筆記型電腦桌</div>
+                            </div>
+                            <div class="the_second_half_p">
+                                <div class="p_type3">$4000</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods_main_a_goods_rel">
+                    <div class="goods_main_a_goods_abs"><a href="#"><img src="./images/good30.png"
+                                class="article_goods_img"></a>
+                        <div class="maingoods_contect">
+                            <div class="upper_half_p">
+                                <div class="p_type1">FJÄLLBO</div>
+                                <div class="p_type2">愛情*筆記型電腦桌</div>
+                            </div>
+                            <div class="the_second_half_p">
+                                <div class="p_type3">$4000</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods_main_a_goods_rel">
+                    <div class="goods_main_a_goods_abs"><a href="#"><img src="./images/good34.png"
+                                class="article_goods_img"></a>
+                        <div class="maingoods_contect">
+                            <div class="upper_half_p">
+                                <div class="p_type1">FJÄLLBO</div>
+                                <div class="p_type2">普通筆記型電腦桌</div>
+                            </div>
+                            <div class="the_second_half_p">
+                                <div class="p_type3">$4000</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods_main_a_goods_rel">
+                    <div class="goods_main_a_goods_abs"><a href="#"><img src="./images/good36.png"
+                                class="article_goods_img"></a>
+                        <div class="maingoods_contect">
+                            <div class="upper_half_p">
+                                <div class="p_type1">FJÄLLBO</div>
+                                <div class="p_type2">筆記型電腦桌</div>
+                            </div>
+                            <div class="the_second_half_p">
+                                <div class="p_type3">$4000</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods_main_a_goods_rel">
+                    <div class="goods_main_a_goods_abs"><a href="#"><img src="./images/good32.png"
+                                class="article_goods_img"></a>
+                        <div class="maingoods_contect">
+                            <div class="upper_half_p">
+                                <div class="p_type1">FJÄLLBO</div>
+                                <div class="p_type2">筆記型電腦桌</div>
+                            </div>
+                            <div class="the_second_half_p">
+                                <div class="p_type3">$4000</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods_main_a_goods_rel">
+                    <div class="goods_main_a_goods_abs"><a href="#"><img src="./images/sale_01.png"
+                                class="article_goods_img"></a>
+                        <div class="maingoods_contect">
+                            <div class="upper_half_p">
+                                <div class="p_type1">FJÄLLBO</div>
+                                <div class="p_type2">筆記型電腦桌</div>
+                            </div>
+                            <div class="the_second_half_p">
+                                <div class="p_type3">$4000</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="goods_main_a">
+                    <div class="goods_main_a_title"><img src="./images/goods_title_02.png" class="goods_main_a_title_img">
+                        <div class="goods_main_a_titletext">
+                            <div>最懷念的...</div>
+                            <div>桌角</div>
+                            <div>醫藥費$58000</div>
+                        </div>
+                    </div>
+                    <div class="goods_main_a_goods_rel">
+                        <div class="goods_main_a_goods_abs"><a href="#"><img src="./images/good32.png"
+                                    class="article_goods_img"></a>
+                            <div class="maingoods_contect">
+                                <div class="upper_half_p">
+                                    <div class="p_type1">FJÄLLBO</div>
+                                    <div class="p_type2">傳統桌角</div>
+                                </div>
+                                <div class="the_second_half_p">
+                                    <div class="p_type3">$40</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goods_main_a_goods_rel">
+                        <div class="goods_main_a_goods_abs"><a href="#"><img src="./images/good35.png"
+                                    class="article_goods_img"></a>
+                            <div class="maingoods_contect">
+                                <div class="upper_half_p">
+                                    <div class="p_type1">FJÄLLBO</div>
+                                    <div class="p_type2">傳統桌角</div>
+                                </div>
+                                <div class="the_second_half_p">
+                                    <div class="p_type3">$4000</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goods_main_a_goods_rel">
+                        <div class="goods_main_a_goods_abs"><a href="#"><img src="./images/good31.png"
+                                    class="article_goods_img"></a>
+                            <div class="maingoods_contect">
+                                <div class="upper_half_p">
+                                    <div class="p_type1">FJÄLLBO</div>
+                                    <div class="p_type2">痛覺桌角</div>
+                                </div>
+                                <div class="the_second_half_p">
+                                    <div class="p_type3">$800</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goods_main_a_goods_rel">
+                        <div class="goods_main_a_goods_abs"><a href="#"><img src="./images/good36.png"
+                                    class="article_goods_img"></a>
+                            <div class="maingoods_contect">
+                                <div class="upper_half_p">
+                                    <div class="p_type1">FJÄLLBO</div>
+                                    <div class="p_type2">偽裝成桌子的桌角</div>
+                                </div>
+                                <div class="the_second_half_p">
+                                    <div class="p_type3">$4000</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goods_main_a_goods_rel">
+                        <div class="goods_main_a_goods_abs"><a href="#"><img src="./images/good07.png"
+                                    class="article_goods_img"></a>
+                            <div class="maingoods_contect">
+                                <div class="upper_half_p">
+                                    <div class="p_type1">FJÄLLBO</div>
+                                    <div class="p_type2">桌角.真.改</div>
+                                </div>
+                                <div class="the_second_half_p">
+                                    <div class="p_type3">$4000</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goods_main_a_goods_rel">
+                        <div class="goods_main_a_goods_abs"><a href="#"><img src="./images/good18.png"
+                                    class="article_goods_img"></a>
+                            <div class="maingoods_contect">
+                                <div class="upper_half_p">
+                                    <div class="p_type1">FJÄLLBO</div>
+                                    <div class="p_type2">桌角.真.改.究極體</div>
+                                </div>
+                                <div class="the_second_half_p">
+                                    <div class="p_type3">$100000</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goods_main_a_goods_rel">
+                        <div class="goods_main_a_goods_abs"><a href="#"><img src="./images/good26.png"
+                                    class="article_goods_img"></a>
+                            <div class="maingoods_contect">
+                                <div class="upper_half_p">
+                                    <div class="p_type1">FJÄLLBO</div>
+                                    <div class="p_type2">奧米迦咆嘯型桌角</div>
+                                </div>
+                                <div class="the_second_half_p">
+                                    <div class="p_type3">$1000000</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="goods_main_a_goods_rel">
+                        <div class="goods_main_a_goods_abs"><a href="#"><img src="./images/good35.png"
+                                    class="article_goods_img"></a>
+                            <div class="maingoods_contect">
+                                <div class="upper_half_p">
+                                    <div class="p_type1">FJÄLLBO</div>
+                                    <div class="p_type2">邊緣桌角</div>
+                                </div>
+                                <div class="the_second_half_p">
+                                    <div class="p_type3">$0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </article>
+
+</body>
+
+</html>
